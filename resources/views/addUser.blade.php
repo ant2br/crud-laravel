@@ -11,12 +11,18 @@
 <body>
 <form action="{{route('store')}}" method="post">
     @csrf
+    <div class="form-group">
         <label for="">Usuario</label>
         <input type="text" name="name">
+    </div>
+    <div class="form-group">
         <label for="">email</label>
         <input type="email" name="email">
+    </div>
+    <div class="form-group">
         <label for="">Senha</label>
         <input type="password" name="password">
+    </div>
         <button type="submit" class="btn btn-success">Cadastrar</button>
     </form>
 
